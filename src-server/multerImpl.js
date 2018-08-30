@@ -3,9 +3,7 @@ module.exports = (app) => {
   const storage = multer.diskStorage({
     destination: './uploads/',
     filename: function (req, file, cb) {
-      const ext = '.' + file.mimetype.split('/')[1]
-
-      cb(null, file.originalname + '_' + Date.now() + ext);
+      cb(null, Date.now() + '_' + file.originalname);
     }
   });
   const upload = multer({storage: storage});

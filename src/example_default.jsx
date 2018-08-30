@@ -6,11 +6,9 @@ export default class Example extends React.Component {
     constructor(props) {
         super(props);
 
-        // For a full list of possible configurations,
-        // please consult http://www.dropzonejs.com/#configuration
         this.djsConfig = {
-            // addRemoveLinks: true,
-            acceptedFiles: "image/*,video/*"
+            acceptedFiles: "image/*,video/*",
+            dictDefaultMessage: 'Klicka här eller dra bilder hit för att ladda upp'
         };
 
         this.componentConfig = {
@@ -18,17 +16,6 @@ export default class Example extends React.Component {
             showFiletypeIcon: true,
             postUrl: '/uploadHandler'
         };
-
-        // // If you want to attach multiple callbacks, simply
-        // // create an array filled with all your callbacks.
-        // this.callbackArray = [() => console.log('Hi!'), () => console.log('Ho!')];
-        //
-        // // Simple callbacks work too, of course
-        // this.callback = () => console.log('Hello!');
-        //
-        // this.success = file => console.log('uploaded', file);
-        //
-        // this.removedfile = file => console.log('removing...', file);
 
         this.dropzone = null;
     }
