@@ -8,7 +8,8 @@ export default class Example extends React.Component {
 
         this.djsConfig = {
             acceptedFiles: "image/*,video/*",
-            dictDefaultMessage: "Klicka här eller dra bilder hit för att ladda upp.<br>Du kan välja flera bilder/videos samtidigt."
+            dictDefaultMessage: "Klicka här eller dra bilder hit för att ladda upp.<br>Du kan välja flera bilder/videos samtidigt.",
+            maxFilesize: 2048
         };
 
         this.componentConfig = {
