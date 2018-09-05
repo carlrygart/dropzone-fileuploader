@@ -15,9 +15,9 @@ class Examples extends React.Component {
     render() {
         return (
             <div style={styles.container}>
-                <h2>
-                    Rygarts dra och släpp
-                </h2>
+                <h1 style={styles.heading}>
+                    Rygarts bilduppladdning
+                </h1>
                 <div className="example">
                     <DefaultExample />
                 </div>

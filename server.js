@@ -9,5 +9,4 @@ require('./src-server/multerImpl')(app)
 
 module.exports = app.listen(app.get('port'), () => {
   console.log('Express server listening on port ' + app.get('port'))
-  console.log('Visit http://localhost:' + app.get('port') + ' to check out the upload example')
 })

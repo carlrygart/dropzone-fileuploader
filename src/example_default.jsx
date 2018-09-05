@@ -8,12 +8,10 @@ export default class Example extends React.Component {
 
         this.djsConfig = {
             acceptedFiles: "image/*,video/*",
-            dictDefaultMessage: 'Klicka här eller dra bilder hit för att ladda upp'
+            dictDefaultMessage: "Klicka här eller dra bilder hit för att ladda upp.<br>Du kan välja flera bilder/videos samtidigt."
         };
 
         this.componentConfig = {
-            iconFiletypes: ['.jpg', '.png', '.gif', '.mp4', '.mov'],
-            showFiletypeIcon: true,
             postUrl: '/uploadHandler'
         };
 
